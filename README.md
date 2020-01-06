@@ -1,4 +1,4 @@
-# atomicasync
+# simple-promise-timeout
 
 `simple-promise-timeout` is a function that returns promise which is rejected if promise is not fulfilled whthin timeout given
 
@@ -27,7 +27,7 @@ promiseTimeout(promise1, 200) // will be rejected after 200ms
 
 <br>
 
-## custom error
+## Custom error
 
 ```javascript
 const promise1: any = new Promise((resolve, reject) => {
