@@ -1,6 +1,6 @@
 {
   "name": "simple-promise-timeout",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "The function that returns promise timeout powered",
   "keywords": [
     "promise",
