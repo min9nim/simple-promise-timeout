@@ -15,11 +15,11 @@ npm i simple-promise-timeout
 ## Usage
 
 ```javascript
-import promiseTimeout from "simple-promise-timeout"
+import promiseTimeout from 'simple-promise-timeout'
 
-const promise1: any = new Promise((resolve, reject) => {
+const promise1 = new Promise((resolve, reject) => {
   setTimeout(() => {
-    resolve("resolved")
+    resolve('resolved')
   }, 400)
 })
 promiseTimeout(promise1, 200) // will be rejected after 200ms
@@ -30,13 +30,13 @@ promiseTimeout(promise1, 200) // will be rejected after 200ms
 ## Custom error
 
 ```javascript
-const promise1: any = new Promise((resolve, reject) => {
+const promise1 = new Promise((resolve, reject) => {
   setTimeout(() => {
-    reject(Error("promise1 error"))
+    reject(Error('promise1 error'))
   }, 400)
 })
 try {
-  await promiseTimeout(promise1, 200, Error("custom error"))
+  await promiseTimeout(promise1, 200, Error('custom error'))
 } catch (e) {
   console.log(e.message) // print "custom error"
 }
