@@ -1,6 +1,6 @@
 {
   "name": "simple-promise-timeout",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "The function that returns promise timeout powered",
   "keywords": [
     "promise",
@@ -10,7 +10,7 @@
   "author": "min9nim@gmail.com",
   "license": "MIT",
   "scripts": {
-    "build": "tsc src/index --outDir dist",
+    "build": "tsc --declaration src/index --outDir dist",
     "test": "mocha -r ts-node/register test/**/*.spec.ts"
   },
   "repository": {
