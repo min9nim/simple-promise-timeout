@@ -1,8 +1,7 @@
 "use strict";
 exports.__esModule = true;
-var es6_promise_1 = require("es6-promise");
 function default_1(promise, timeout, timeoutError) {
-    return new es6_promise_1.Promise(function (resolve, reject) {
+    return new Promise(function (resolve, reject) {
         var fulfilled = false;
         promise
             .then(function (res) {
